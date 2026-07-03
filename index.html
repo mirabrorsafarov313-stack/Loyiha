@@ -1,11 +1,153 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>About Me</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI Landing Page</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial,sans-serif;
+}
+
+body{
+    background:#081321;
+    color:white;
+}
+
+header{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:20px 80px;
+}
+
+.logo{
+    font-size:28px;
+    font-weight:bold;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    margin:0 15px;
+}
+
+.signin{
+    background:#2563eb;
+    padding:10px 20px;
+    border:none;
+    color:white;
+    border-radius:5px;
+}
+
+.hero{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:70px 80px;
+}
+
+.text{
+    width:50%;
+}
+
+.text h1{
+    font-size:55px;
+    margin-bottom:20px;
+}
+
+.text p{
+    color:#cbd5e1;
+    margin-bottom:30px;
+    line-height:28px;
+}
+
+.btn{
+    padding:14px 28px;
+    border:none;
+    border-radius:6px;
+    cursor:pointer;
+    margin-right:10px;
+}
+
+.primary{
+    background:#2563eb;
+    color:white;
+}
+
+.secondary{
+    background:transparent;
+    color:white;
+    border:2px solid white;
+}
+
+.image img{
+    width:500px;
+    border-radius:15px;
+}
+
+@media(max-width:768px){
+    header,
+    .hero{
+        flex-direction:column;
+        text-align:center;
+    }
+
+    .text{
+        width:100%;
+    }
+
+    .image img{
+        width:100%;
+        margin-top:20px;
+    }
+
+    .text h1{
+        font-size:38px;
+    }
+}
+</style>
+
 </head>
 <body>
-    <h1>Assalomu alaykum!</h1>
-    <p>Ismim: Nurshodbek</p>
-    <p>Men Junior kursida dasturlashni o'rganmoqdaman.</p>
+
+<header>
+    <div class="logo">AI SECURITY</div>
+
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Services</a>
+        <a href="#">Blog</a>
+        <a href="#">Contact</a>
+    </nav>
+
+    <button class="signin">Sign In</button>
+</header>
+
+<section class="hero">
+
+    <div class="text">
+        <h1>Artificial Intelligence & Cyber Security</h1>
+
+        <p>
+            Protect your business with modern artificial intelligence
+            and cyber security solutions.
+        </p>
+
+        <button class="btn primary">Get Started</button>
+        <button class="btn secondary">Watch Video</button>
+    </div>
+
+    <div class="image">
+        <img src="https://images.unsplash.com/photo-1485827404703-89b55fcc595e?w=800" alt="AI">
+    </div>
+
+</section>
+
 </body>
 </html>
